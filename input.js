@@ -32,6 +32,9 @@ stdin.on('data', (data)=> {
     connection.write('Move: right')
   }
 
+  if (data === 'h') {
+    connection.write('Say: hungry')
+  }
 })
 
 //   const handleUserInput = function () {
