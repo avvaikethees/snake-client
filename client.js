@@ -22,6 +22,7 @@ const net = require('net');
       conn.write("Name: AVK");
     });
 
+    return conn;
     // 
     // conn.on('connect', () => {
     //   conn.write("Name: AVK");
@@ -34,13 +35,11 @@ const net = require('net');
     //     conn.write("Move: left")
     //   }, 2000)
     // })
-
-
-
-   return conn;
  }
 
- module.exports = connect
+ module.exports = {
+   connect,
+}
 
 
 
